@@ -27,14 +27,16 @@ def first_word (a)
 	return a
 end
 
-def titleize  (a)
+def titleize (a)
 	a = a.capitalize
 	a = a.split
-	a.each do | word |
+	a.each_with_index do | word, index |
 		if word.length > 3
-			word = word.capitalize
+			a[index] = word.capitalize
+			
+
 		end
 	end
-	a = word.join(" ")	
+	a = a.join(" ")
 	return a
 end
