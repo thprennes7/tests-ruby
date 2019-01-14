@@ -27,6 +27,11 @@ def power(a, b)
 end
 
 def factorial (n)
-	factorial_value = (1..n).inject(:*)
+	case n
+	when 0
+		factorial_value = 1
+	else
+		factorial_value = (1..n).inject(:*)
+	end 
 	return factorial_value
 end
