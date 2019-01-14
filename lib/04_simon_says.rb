@@ -27,7 +27,7 @@ def first_word (a)
 	return a
 end
 
-def titleize (a)
+def titleize  (a)
 	a = a.capitalize
 	a = a.split
 	a.each do | word |
